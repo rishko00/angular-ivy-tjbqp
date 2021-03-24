@@ -22,6 +22,10 @@ export class ContactComponent {
     document.body.style.backgroundColor = "blue";
   }
 
+  ngOnDestroy(){
+    document.body.style.backgroundColor = "white";
+  }
+
   sendForm(){
     console.log(this.myForm.value);
   }
